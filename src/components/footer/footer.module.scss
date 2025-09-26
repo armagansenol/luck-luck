@@ -1,5 +1,22 @@
+.address {
+  padding: desktop-vw(40px) desktop-vw(40px);
+
+  font-family: var(--font-manrope);
+  font-size: desktop-vw(18px);
+  font-weight: 500;
+  line-height: 1.35;
+
+  @include mobile {
+    padding: mobile-vw(40px) mobile-vw(16px);
+    padding-bottom: 0;
+
+    font-size: mobile-vw(18px);
+    order: 2;
+  }
+}
+
 .footer {
-  @include dims(auto, desktop-vw(180px));
+  @include dims(auto, desktop-vw(100px));
   padding: desktop-vw(40px) desktop-vw(40px);
   position: relative;
 
